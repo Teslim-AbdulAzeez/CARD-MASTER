@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+    font-size: 100%;
+}
+body {
+  background-color: whitesmoke;
+  max-width: 100%;
+  max-height: 100%;
+  padding:3rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+/* section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+} */
+
+/* PAGE TITLE CONTAINER */
+.page_title_container {
+  text-align: center;
+  width: 28rem;
+  margin-bottom: 3rem;;
+}
+.page_title_heading {
+  font-size: x-large;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.3rem;
+}
+h2 {
+  margin-bottom: 0.4rem;
+}
+.page_title_description {
+  display: inline-block;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: hsl(212, 6%, 44%);
+  font-weight: 400;
+  width: 100%;
+}
+
+/* CARDS CONTAINER STYLING*/
+.master_cards_container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  /* max-width: 100%;  */
+}
+.master_double_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card {
+  width: 15rem;
+  font-size: 0.6rem;
+  padding: 0.8rem;
+  height: 10.5rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.3),
+    0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+h3 {
+  font-size: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+.paragraph {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: hsl(212, 6%, 44%);
+}
+.card_image {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  width: 3rem;
+}
+
+.supervisor_card {
+  border-top: 4px hsl(180, 62%, 55%) solid;
+}
+.karma_card {
+  border-top: 4px hsl(34, 97%, 64%) solid;
+}
+.team_builder_card {
+  border-top: 4px hsl(0, 78%, 62%) solid;
+}
+.calculator_card {
+  border-top: 4px hsl(212, 86%, 64%) solid;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+  .master_cards_container{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .master_double_card_container{
+    flex-direction: row;
+  }
+}
+@media(max-width:601px){
+  .master_double_card_container{
+    flex-direction: column;
+  }
+}
+@media(max-width:480px){
+  html{
+    font-size: 92.5%
+  }
+  .paragraph,.page_title_description{
+    font-weight: 600;
+  }
+}
+@media(max-width:450px){
+  html{
+    font-size: 85.5%;
+  }
+  .paragraph,.page_title_description{
+    font-weight: 600;
+  }
+}
+@media(max-width:380px){
+  html{
+    font-size: 72.0%;
+  }
+  .paragraph,.page_title_description{
+    font-weight: 600;
+  }
+}
+@media(max-width:320px){
+  html{
+    font-size: 68%;
+  }
+}
